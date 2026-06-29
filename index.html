@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mazda Transyogi</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<!-- Popup Contact -->
+<div id="popupKontak" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="tutupKontak()">&times;</span>
+
+        <h2>Contact Person Mazda Transyogi</h2>
+
+        <img src="images/logo.png" alt="Customer Service">
+
+        <h3>Sales Force</h3>
+
+        <p><strong>Name :</strong> Ananta Pratama</p>
+
+        <p><strong>WhatsApp :</strong> 0821-2015-9585</p>
+
+        <p><strong>Email :</strong> nantap7@gmail.com</p>
+
+        <a href="https://wa.me/6282120159585" target="_blank" class="btn-wa">
+            Chat WhatsApp
+        </a>
+
+    </div>
+
+</div>
+
+<div id="detailModal" class="modal">
+
+    <div class="modal-box">
+
+        <span class="close" onclick="tutupDetail()">&times;</span>
+
+        <img id="gambarMobil" src="" alt="">
+
+        <h2 id="namaMobil"></h2>
+
+        <h3 id="hargaMobil"></h3>
+
+        <p id="spesifikasiMobil"></p>
+
+        <a href="https://wa.me/6282120159585"
+           target="_blank"
+           class="btn-detail">
+           Contack Sales
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ===== POPUP TENTANG MAZDA ===== -->
+
+<div id="tentangModal" class="modal">
+
+    <div class="tentang-popup">
+
+        <span class="close" onclick="tutupTentang()">&times;</span>
+
+        <img src="images/logo.png" class="logoMazda">
+
+        <h2>MAZDA</h2>
+
+        <h4>MAKES YOU FEEL ALIVE</h4>
+
+        <p>
+           We believe in the power of human potential,
+            creativity, imagination and the amazing things
+            we're all capable of when we're inspired.
+        </p>
+
+        <p>
+            We believe in taking the unconventional road 
+            and going the extra mile to do work that inspired.
+        </p>
+
+        <p>
+            We believe in artisans, designers, engineers and 
+            ambassadors who pour human energy into their work.
+        </p>
+
+        <p>
+            We believe in the power of cars to move human emotions.
+            To awaken senses, highten reflexes, make pulses race.
+        </p>
+
+        <p>
+            we believe the joy of being alive comes from what we 
+            discover on our journey, and the inspiration we find in 
+            every mile.
+        </p>
+
+
+        <button class="btn-tutup" onclick="tutupTentang()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= POPUP LOKASI ================= -->
+
+<div id="lokasiModal" class="modal">
+
+    <div class="lokasi-popup">
+
+        <span class="close" onclick="tutupLokasi()">&times;</span>
+
+        <h2>📍 Location Dealer Mazda</h2>
+
+        <h4>Mazda Transyogi</h4>
+
+        <p>
+            Jl. Transyogi No.KM.6, Cibubur<br>
+            Kec. Gn. Putri, Cibubur, Jawa Barat 16967
+        </p>
+
+        <p>
+            🕗 Monday - Saturday : 08.00 - 19.00 WIB
+        </p>
+
+        <!-- Google Maps -->
+        <iframe
+            src="https://maps.app.goo.gl/KKKfjrhpyyEQkcPH7"
+            width="100%"
+            height="250"
+            style="border:0; border-radius:10px;"
+            loading="lazy">
+        </iframe>
+
+        <a href="https://maps.app.goo.gl/KKKfjrhpyyEQkcPH7"
+           target="_blank"
+           class="btn-maps">
+            📍 Open With Google Maps
+        </a>
+
+    </div>
+
+</div>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+MAZDA TRANSYOGI
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#produk" class="button"produk>Vehicle</a></li>
+<li><a href="#" onclick="bukaTentang()">About</a></li>
+<li><a href="#" onclick="bukaLokasi()">Location</a></li>
+<li><a href="#" onclick="bukaKontak()">Contack</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<h1>CELEBRATE DRIVING</h1>
+
+<p>Find Your Dream Mazda Now.</p>
+
+<a href="#produk" class="btn">View Product</a>
+
+</div>
+
+</header>
+
+<section id="produk">
+
+<h2>VEHICLE</h2>
+
+<div class="product-container">
+
+<div class="card">
+
+<img src="images/mazda3.jpg">
+
+<h3>Mazda 3 Hatchback</h3>
+
+
+<button onclick="detail(
+'images/mazda3.jpg',
+'Mazda 3 Hatchback',
+'Rp 588.800.000',
+'Mesin Skyactiv-G 2.0L<br>156 HP<br>Automatic 6-Speed'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/mazda3sedannew.JPG">
+
+<h3>Mazda 3 Sedan</h3>
+
+
+<button onclick="detail(
+'images/mazda3sedannew.jpg',
+'Mazda 3 Sedan',
+'Rp 588.800.000',
+'Mesin Skyactiv-G 2.0L<br>156 HP<br>Automatic 6-Speed'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/mazda2new.jpeg">
+
+<h3>Mazda 2 Hatchback</h3>
+
+
+<button onclick="detail(
+'images/mazda2new.jpg',
+'Mazda 2 Hatchback',
+'SPORT Rp 371.100.000'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/mazda2 sedan.jpg">
+
+<h3>Mazda 2 Sedan</h3>
+
+
+<button onclick="detail(
+'images/mazda2 sedan.jpg',
+'Mazda 2 Sedan',
+'SPORT Rp 371.100.000'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/cx5new.jpeg">
+
+<h3>Mazda CX-5</h3>
+
+<button onclick="detail(
+'images/cx5new.jpg',
+'Mazda CX-5',
+'ELITE Rp 647.700.000','KURO AWD Rp 689.900.000'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/cx30new.jpg">
+
+<h3>Mazda CX-30</h3>
+
+
+<button onclick="detail(
+'images/cx30new.jpg',
+'Mazda CX-30',
+'SPORT Rp 585.500.000'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/cx60new.JPG">
+
+<h3>Mazda CX-60</h3>
+
+
+<button onclick="detail(
+'images/cx60new.jpg',
+'Mazda CX 60',
+'SPORT Rp 720.000.000',
+'PRO Rp 830.000.000'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/cx80.jpg">
+
+<h3>Mazda CX-80</h3>
+
+<button onclick="detail(
+'images/cx80.jpg',
+'Mazda CX-80',
+'ELITE Rp 1.199.900.000','KURO AWD Rp 1.199.900.000'
+)">
+View Detail
+</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/cx3new.jpg">
+
+<h3>Mazda CX-3</h3>
+
+
+<button onclick="detail(
+'images/cx3new.jpg',
+'Mazda CX 3',
+'TOURING Rp 402.500.000',
+'KURO Rp 421.200.000 PRO AUTOEXE Rp 571.600.000'
+)">
+View Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/mx5.jpg">
+
+<h3>Mazda MX-5</h3>
+
+<button onclick="detail(
+'images/mx5.jpg',
+'Mazda MX-5',
+'MT Rp 954.800.000',
+'PRO Rp 964.800.000'
+)">
+View Detail
+</button>
+
+</div>
+<div class="card">
+
+<img src="images/cx8.jpg">
+
+<h3>Mazda CX-8</h3>
+
+
+<button onclick="detail(
+'images/cx8.jpg',
+'Mazda CX 8',
+'Rp 828.800.000'
+
+)">
+View Detail
+</button>
+
+</div>
+
+</section>
+
+</section>
+
+<footer>
+
+<p>
+MAZDA TRANSYOGI
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
