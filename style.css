@@ -854,3 +854,103 @@ section h2{
 }
 
 }
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,.5);
+}
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:white;
+    cursor:pointer;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#c00000;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width:768px){
+
+nav{
+    padding:15px 20px;
+    position:relative;
+}
+
+.logo{
+    font-size:20px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+nav ul{
+
+    display:none;
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:70px;
+
+    left:0;
+
+    width:100%;
+
+    background:#111;
+
+    padding:20px 0;
+
+    text-align:center;
+
+}
+
+nav ul.active{
+
+    display:flex;
+
+}
+
+nav ul li{
+
+    margin:15px 0;
+
+}
+
+nav ul li a{
+
+    font-size:18px;
+
+}
+
+}
