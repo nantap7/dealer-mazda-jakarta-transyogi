@@ -66,7 +66,7 @@ color:white;
 
 .hero{
 
-height:80vh;
+height:70vh;
 
 display:flex;
 
@@ -82,7 +82,7 @@ text-align:center;
 
 .hero h1{
 
-font-size:30px;
+font-size:14px;
 
 margin-bottom:45px;
 
@@ -90,7 +90,7 @@ margin-bottom:45px;
 
 .hero p{
 
-font-size:22px;
+font-size:18px;
 
 margin-bottom:30px;
 
