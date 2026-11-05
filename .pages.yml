@@ -1,0 +1,48 @@
+
+media:
+  input: images
+  output: /images
+
+content:
+  - name: articles
+    label: Artikel Mazda
+    type: collection
+    path: artikel
+    format: json
+    filename: artikel.json
+    view:
+      fields:
+        - title
+        - category
+        - date
+    fields:
+      - name: title
+        label: Judul Artikel
+        type: string
+        required: true
+
+      - name: category
+        label: Kategori
+        type: select
+        options:
+          values:
+            - Berita Mazda
+            - Tips Otomotif
+            - Promo Mazda
+            - Review Mobil
+
+      - name: date
+        label: Tanggal Publikasi
+        type: date
+
+      - name: image
+        label: Foto Artikel
+        type: image
+
+      - name: excerpt
+        label: Deskripsi Singkat
+        type: text
+
+      - name: body
+        label: Isi Artikel
+        type: rich-text
